@@ -221,6 +221,9 @@
   }
 }
 @layer utilities {
+  .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -424,6 +427,15 @@
       border-color: var(--color-gray-300);
     }
   }
+  .divide-gray-500 {
+    :where(& > :not(:last-child)) {
+      border-color: var(--color-gray-500);
+    }
+  }
+  .self-center {
+    align-self: center;
+  }
+
   .overflow-hidden {
     overflow: hidden;
   }
@@ -449,6 +461,10 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .border-y {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 1px;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style);
