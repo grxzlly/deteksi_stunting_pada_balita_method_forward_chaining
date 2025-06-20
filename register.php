@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
 
-  <div class="w-full max-w-2xl bg-white rounded-lg shadow p-6 space-y-6">
+  <div class="w-full max-w-2xl bg-white rounded-lg shadow p-6 space-y-6 mt-5 mb-5">
     <h2 class="text-2xl font-bold text-gray-800 text-center">Registrasi Akun</h2>
     <p class="text-center text-sm text-gray-500">Daftarkan akun Anda dan data balita Anda.</p>
 
@@ -135,13 +135,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <p class="text-center text-sm text-gray-600">
         Sudah punya akun?
         <a href="login.php" class="text-blue-600 hover:underline">Login di sini</a>
-      </p>
-    </form>
-  </div>
-
-      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 font-medium">Daftar</button>
-      <p class="text-sm text-center text-gray-600 mt-4">
-        Sudah punya akun? <a href="login.php" class="text-blue-600 hover:underline">Login di sini</a>
       </p>
     </form>
   </div>

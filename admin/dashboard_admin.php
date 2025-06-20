@@ -67,7 +67,7 @@ $recent_diagnosis_query = mysqli_query($koneksi,
           <div class="font-semibold">Kelola Aturan & Pertanyaan</div>
           <p class="text-sm text-gray-500">Ubah basis pengetahuan untuk sistem pakar.</p>
         </a>
-        <a href="laporan_diagnosis.php" class="p-4 border rounded hover:shadow-md transition text-center text-gray-700">
+        <a href="export.php" class="p-4 border rounded hover:shadow-md transition text-center text-gray-700">
           <div class="text-3xl mb-2">📋</div>
           <div class="font-semibold">Laporan Diagnosis</div>
           <p class="text-sm text-gray-500">Lihat semua riwayat diagnosis dan ekspor data.</p>
