@@ -31,7 +31,7 @@ $recent_diagnosis_query = mysqli_query($koneksi,
     <!-- Header -->
     <header class="flex justify-between items-center mb-6">
       <h1 class="text-2xl font-bold text-gray-800">Admin Dashboard</h1>
-      <div class="text-sm text-gray-700">
+      <div class="text-xl text-gray-700">
         Halo, <strong><?php echo htmlspecialchars($_SESSION['username']); ?>!</strong>
         <a href="../logout.php" class="ml-4 text-blue-600 hover:underline">Logout →</a>
       </div>
@@ -81,7 +81,7 @@ $recent_diagnosis_query = mysqli_query($koneksi,
       <div class="overflow-x-auto">
         <table class="min-w-full text-sm border">
           <thead class="bg-gray-50">
-            <tr class="text-left text-gray-600">
+            <tr class="text-center text-gray-600">
               <th class="px-4 py-2 border-b">Tanggal</th>
               <th class="px-4 py-2 border-b">Nama Balita</th>
               <th class="px-4 py-2 border-b">Orang Tua</th>
@@ -92,10 +92,10 @@ $recent_diagnosis_query = mysqli_query($koneksi,
             <?php if (mysqli_num_rows($recent_diagnosis_query) > 0): ?>
               <?php while($row = mysqli_fetch_assoc($recent_diagnosis_query)): ?>
               <tr class="hover:bg-gray-50">
-                <td class="px-4 py-2 border-b"><?php echo date('d M Y, H:i', strtotime($row['tanggal_diagnosis'])); ?></td>
-                <td class="px-4 py-2 border-b"><?php echo htmlspecialchars($row['nama_balita']); ?></td>
-                <td class="px-4 py-2 border-b"><?php echo htmlspecialchars($row['nama_lengkap_user']); ?></td>
-                <td class="px-4 py-2 border-b"><?php echo htmlspecialchars($row['kesimpulan_akhir']); ?></td>
+                <td class="px-4 py-2 border-b text-center"><?php echo date('d M Y, H:i', strtotime($row['tanggal_diagnosis'])); ?></td>
+                <td class="px-4 py-2 border-b text-center"><?php echo htmlspecialchars($row['nama_balita']); ?></td>
+                <td class="px-4 py-2 border-b text-center"><?php echo htmlspecialchars($row['nama_lengkap_user']); ?></td>
+                <td class="px-4 py-2 border-b text-center"><?php echo htmlspecialchars($row['kesimpulan_akhir']); ?></td>
               </tr>
               <?php endwhile; ?>
             <?php else: ?>
